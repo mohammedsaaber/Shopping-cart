@@ -287,6 +287,11 @@
         width: 250px;
         margin: 0 10px;
     }
+    
+    .dynamic-nav
+    {
+        width: 320px;
+    }
 }
 
 
