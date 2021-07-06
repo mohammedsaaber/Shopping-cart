@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- start of Navigation -->
+
+    <div class="navigation">
+
+        <div class="bar-icon"><i class="fas fa-bars"></i></div>
+
+        <div><img src="images/logo.svg"></div>
+
+        <div class="cart-icon" onclick="toggleMenu()"><i class="fas fa-cart-plus"></i>
+
+            <div class="cart-counter">0</div>
+
+        </div>
+
+    </div>
+
+    <!-- end of Navigation -->
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start of main -->
+
+    <div class="main">
+
+        <div class="sub-main">
+
+            <h1>FURNITURE COLLECTION</h1>
+
+            <button class="main-btn">SHOP NOW</button>
+
+        </div>
+
+    </div>
+
+    <!-- end of main -->
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start of product -->
+
+    <div class="our-product">
+
+        <h2>Our Products</h2>
+
+        <div class="products">
+
+            <div class="product-1">
+
+                <div class="product-img img-1">
+
+                    <div class="add-cart-img cart1" onclick="product1.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg1">ADD TO CART</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h5 class="product-name">Queen Panel Bed</h5>
+                    <h6 class="product-price price1">$350</h6>
+                </div>
+
+            </div>
+
+            <div class="product-2">
+
+                <div class="product-img img-2">
+                    <div class="add-cart-img cart2" onclick="product2.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg2">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">King Panel Bed</h5>
+                    <h6 class="product-price price2">$180</h6>
+                </div>
+
+
+            </div>
+
+            <div class="product-3">
+
+                <div class="product-img img-3">
+                    <div class="add-cart-img cart3" onclick="product3.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg3">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">Single Panel Bed</h5>
+                    <h6 class="product-price price3">$499</h6>
+                </div>
+
+            </div>
+
+            <div class="product-4">
+
+                <div class="product-img img-4">
+                    <div class="add-cart-img cart4" onclick="product4.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg4">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">Twin Panel Bed</h5>
+                    <h6 class="product-price price4">$300</h6>
+                </div>
+
+            </div>
+
+            <div class="product-5">
+
+                <div class="product-img img-5">
+                    <div class="add-cart-img cart5" onclick="product5.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg5">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">Fridge</h5>
+                    <h6 class="product-price price5">$600</h6>
+                </div>
+
+            </div>
+
+            <div class="product-6">
+
+                <div class="product-img img-6">
+                    <div class="add-cart-img cart6" onclick="product6.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg6">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">Dresser</h5>
+                    <h6 class="product-price price6">$130</h6>
+                </div>
+
+            </div>
+
+            <div class="product-7">
+
+                <div class="product-img img-7">
+                    <div class="add-cart-img cart7" onclick="product7.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg7">ADD TO CART</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="product-name">Couch</h5>
+                    <h6 class="product-price price7">$50</h6>
+                </div>
+
+            </div>
+
+            <div class="product-8">
+
+                <div class="product-img img-8">
+
+                    <div class="add-cart-img cart8" onclick="product8.addToCart()">
+                        <i class="fas fa-cart-plus"></i>
+                        <p class="product-prg8">ADD TO CART</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h5 class="product-name">Table</h5>
+                    <h6 class="product-price price8">$25</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end of product -->
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start of dynamic nav -->
+
+
+    <div class="dynamic-nav">
+
+        <div onclick="toggleMenu()">
+            <i class="far fa-window-close close"></i>
+        </div>
+
+        <h1>Your Cart</h1>
+
+        <div class="myproduct">
+
+            <div class="prod1 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-1.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Queen Panel Bed</h5>
+                        <p>$350</p>
+                        <span onclick="product1.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product1.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter1">0</div>
+                    <i onclick="product1.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod2 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-2.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>King Panel Bed</h5>
+                        <p>$180</p>
+                        <span onclick="product2.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product2.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter2">0</div>
+                    <i onclick="product2.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod3 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-3.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Single Panel Bed</h5>
+                        <p>$499</p>
+                        <span onclick="product3.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product3.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter3">0</div>
+                    <i onclick="product3.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod4 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-4.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Twin Panel Bed</h5>
+                        <p>$300</p>
+                        <span onclick="product4.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product4.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter4">0</div>
+                    <i onclick="product4.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod5 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-5.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Fridge</h5>
+                        <p>$600</p>
+                        <span onclick="product5.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product5.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter5">0</div>
+                    <i onclick="product5.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod6 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-6.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Dresser</h5>
+                        <p>$130</p>
+                        <span onclick="product6.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product6.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter6">0</div>
+                    <i onclick="product6.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod7 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-7.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Couch</h5>
+                        <p>$50</p>
+                        <span onclick="product7.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product7.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter7">0</div>
+                    <i onclick="product7.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+            <div class="prod8 prod">
+
+                <div class="prod-left-side">
+
+                    <div><img src="images/product-8.jpeg"></div>
+
+                    <div class="prod-text">
+                        <h5>Table</h5>
+                        <p>$25</p>
+                        <span onclick="product8.removeProduct()">remove</span>
+                    </div>
+
+                </div>
+
+                <div class="prod-right-side">
+                    <i onclick="product8.counterUpdate('+')" class="fas fa-chevron-up up-down"></i>
+                    <div class="prod-counter8">0</div>
+                    <i onclick="product8.counterUpdate('-')" class="fas fa-chevron-down up-down"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="total">Your Total: $<span class="total-amount">0</span></div>
+
+        <div class="clear-btn"><button onclick="clearMenu()">CLEAR CART</button></div>
+    </div>
+
+
+
+    <!-- end of dynamic nav -->
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
